@@ -14,7 +14,7 @@ export const getSuggestedConnections = async (req, res) => {
 		})
 			.select("name username profilePicture headline")
 			.limit(5);
-npm 
+
 		res.json(suggestedUser);
 	} catch (error) {
 		console.error("Error in getSuggestedConnections controller:", error);
